@@ -16,6 +16,8 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    loadComponent: () => import('./pages/about/about-page.component')
+    redirectTo: () => {
+      return 'about';
+    }
     },
 ];
